@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALU YOGA - Sobre Nosotros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.menu-links');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+    toggle.setAttribute('aria-expanded', !expanded);
+    links.classList.toggle('show');
+  });
+</script>
+<body>
+  <header>
+  <nav class="menu">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo ALU YOGA">
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="horarios.html">Horarios</a></li>
+    </ul>
+  </nav>
+  </header>
+ <main>
+    <section class="sobre">
+      <h1>Sobre Nosotros</h1>
+      <p>
+        En <strong>ALU YOGA</strong> creemos que el yoga es un camino hacia el equilibrio 
+        entre cuerpo, mente y espíritu. Nuestro espacio fue creado para ofrecer clases 
+        presenciales en un ambiente cálido, minimalista y lleno de energía positiva.
+      </p>
+      <p>
+        Contamos con instructores certificados que te acompañarán en cada práctica, 
+        adaptando las clases a todos los niveles: desde principiantes hasta avanzados.
+      </p>
+      <p>
+        Nuestra misión es que cada persona que nos visite se sienta parte de una comunidad 
+        que valora la salud, la calma y el bienestar integral.
+      </p>
+    </section>
+    <section class="frase">
+   <blockquote>
+    "El yoga te permite sentir un nuevo tipo de libertad que quizá ni siquiera sabías que existía."
+    <span class="autor">— B.K. Iyengar</span>
+   </blockquote>
+  </section>
+  </main>
+<footer>
+    <p>© 2025 ALU YOGA - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

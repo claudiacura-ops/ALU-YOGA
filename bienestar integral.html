@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienestar Integral – ALU YOGA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.menu-links');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+    toggle.setAttribute('aria-expanded', !expanded);
+    links.classList.toggle('show');
+  });
+</script>
+<body>
+<header>
+  <nav class="menu" aria-label="Menú principal">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo de ALU YOGA">
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Sobre Nosotros</a></li>
+      <li><a href="bienestar.html" aria-current="page">Bienestar Integral</a></li>
+      <li><a href="horarios.html">Horarios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="bienestar">
+    <section class="bienestar-dos-columnas">
+    <div class="bienestar-imagen">
+    <img src="assets/alimentación saludable.png" alt="Frutas coloridas que representan una alimentación saludable">
+  </div>
+
+  <div class="bienestar-texto">
+    <h1>ALIMENTACIÓN PARA EL EQUILIBRIO</h1>
+    <p>
+      La alimentación consciente es una extensión natural de la práctica del yoga. 
+      Elegir alimentos frescos, coloridos y nutritivos nos ayuda a mantener la energía, 
+      mejorar la digestión y conectar con nuestro cuerpo de una manera más profunda.
+    </p>
+
+    <p>
+      Incorporar variedad de colores en tus comidas no solo aporta vitaminas y minerales, 
+      sino que también invita a una relación más amable y equilibrada con la comida. 
+      Cada color tiene un beneficio distinto, y juntos crean una armonía que se refleja 
+      en tu bienestar físico y emocional.
+    </p>
+
+    <p>
+      Recordá: no se trata de perfección, sino de elegir con amor lo que tu cuerpo necesita 
+      para sentirse fuerte, liviano y en calma.
+    </p>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2025 ALU YOGA – Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

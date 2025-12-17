@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALU YOGA - Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.menu-links');
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+    toggle.setAttribute('aria-expanded', !expanded);
+    links.classList.toggle('show');
+  });
+</script>
+<body>
+  <header>
+  <nav class="menu">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo ALU YOGA">
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="horarios.html">Horarios</a></li>
+      <li><a href="bienestar integral.html">Bienestar Integral</a></li>
+    </ul>
+  </nav>
+  </header>
+<main>
+    <section class="hero">
+  <video autoplay muted loop class="video-fondo">
+    <source src="assets/video.yoga.mp4" type="video/mp4">
+    <iframe src=https://drive.google.com/file/d/1MAVpy9pDc21HqfUsML2yG5IryLDLjW5p/view?uspsharing
+width="640" height="360" allow="autoplay"></iframe>
+  </video>
+  <div class="hero-texto">
+   <img src="assets/logo.png" alt="Logo de ALU YOGA" class="logo-hero">
+   <h1>ALU YOGA</h1>
+   <p>Clases presenciales para reconectar con tu cuerpo, mente y energía.</p>
+   <a href="contacto.html" class="btn-cta">Más información</a>
+ </div>
+ </section>
+   <section class="clases">
+  <h2>Nuestras Clases</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/card.1.jpeg" alt="Clase Vinyasa">
+      <h3>Vinyasa Flow</h3>
+      <p>Secuencias dinámicas que conectan respiración y movimiento.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.2.jpeg" alt="Clase Hatha">
+      <h3>Hatha Yoga</h3>
+      <p>Posturas tradicionales para mejorar fuerza y flexibilidad.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.3.jpeg" alt="Clase Yin">
+      <h3>Yin Yoga</h3>
+      <p>Práctica suave para relajar músculos y liberar tensiones.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.4.jpeg" alt="Clase Ashtanga">
+      <h3>Ashtanga Yoga</h3>
+      <p>Serie estructurada que fortalece cuerpo y mente.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.5.jpeg" alt="Clase Kundalini">
+      <h3>Kundalini Yoga</h3>
+      <p>Ejercicios energéticos que despiertan la conciencia interior.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.6.jpeg" alt="Clase Restaurativo">
+      <h3>Yoga Restaurativo</h3>
+      <p>Posturas pasivas con apoyo para una relajación profunda.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.8.jpeg" alt="Clase Power Yoga">
+      <h3>Power Yoga</h3>
+      <p>Práctica intensa que combina fuerza y resistencia.</p>
+    </div>
+    <div class="card">
+      <img src="assets/card.7.jpeg" alt="Clase Meditación">
+      <h3>Meditación Guiada</h3>
+      <p>Técnicas de respiración y concentración para la calma mental.</p>
+    </div>
+ </div>
+ </section>
+</main>
+
+<footer>
+    <p>© 2025 ALU YOGA - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
